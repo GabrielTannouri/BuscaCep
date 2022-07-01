@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Buscar CEP";
+}
+
+<h4>Buscar CEP</h4>
+<p>Digite o CEP no campo abaixo para encontrar seu endereço.</p>
+<div id="spinner-div" class="pt-5">
+    <div class="spinner-border text-primary" role="status">
+    </div>
+</div>
+
+<div class="input-group mb-3">
+    <input id="input-buscar-cep" class="form-control" data-inputmask-clearmaskonlostfocus="false" placeholder="Digite o cep...">
+    <div class="input-group-append">
+        <button class="btn btn-primary" type="button" onclick="FindCep()">Buscar</button>
+    </div>
+</div>
+<div id="message_error" style="color:red"></div>
+
+<form>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputLogradouro">Logradouro</label>
+            <input type="text" class="form-control col-12" id="inputLogradouro" readonly>
+        </div>
+    </div>
+    
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputBairro">Bairro</label>
+            <input type="text" class="form-control col-12" id="inputBairro" readonly>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-12">
+            <label for="inputLocalidade">Localidade</label>
+            <input type="text" class="form-control col-12" id="inputLocalidade" readonly>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="inputComplemento">Complemento</label>
+            <input type="text" class="form-control col" id="inputComplemento" readonly>
+        </div>
+        <div class="form-group col">
+            <label for="inputUF">UF</label>
+            <input type="text" class="form-control col" id="inputUF" readonly>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="inputIBGE">IBGE</label>
+            <input type="text" class="form-control col" id="inputIBGE" readonly>
+        </div>
+
+        <div class="form-group col">
+            <label for="inputGIA">GIA</label>
+            <input type="email" class="form-control col" id="inputGIA" readonly>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col">
+            <label for="inputDDD">DDD</label>
+            <input type="text" class="form-control col" id="inputDDD" readonly>
+        </div>
+        <div class="form-group col">
+            <label for="inputSiafi">SIAFI</label>
+            <input type="email" class="form-control col" id="inputSiafi" readonly>
+        </div>
+    </div>
+</form>
